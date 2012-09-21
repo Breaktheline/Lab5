@@ -1,0 +1,685 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 40.23      0.35     0.35  3299439     0.00     0.00  Arch::GetNextVertex()
+ 11.49      0.45     0.10  7345971     0.00     0.00  TList<Arch*>::GetElement(int)
+  4.60      0.49     0.04  2473111     0.00     0.00  TList<Arch*>::Add(Arch*)
+  4.60      0.53     0.04   824013     0.00     0.00  SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int)
+  4.60      0.57     0.04        1    40.00   542.17  SuffixTreeBuilder::BuildTree()
+  3.45      0.60     0.03  7344729     0.00     0.00  TList<Arch*>::GetCount()
+  3.45      0.63     0.03  1649098     0.00     0.00  Arch::Arch(int, int, int)
+  3.45      0.66     0.03   824014     0.00     0.00  Vertex::Vertex(Arch*)
+  2.87      0.69     0.03  2473111     0.00     0.00  Vertex::AddOutcomeArch(Arch*)
+  2.87      0.71     0.03   824014     0.00     0.00  Vertex::~Vertex()
+  2.30      0.73     0.02  2474356     0.00     0.00  Vertex::GetOutcomeArches()
+  2.30      0.75     0.02        1    20.00   306.70  SuffixTree::TreeFullDelete(Vertex*)
+  1.72      0.77     0.01   824014     0.00     0.00  TList<Arch*>::~TList()
+  1.15      0.78     0.01  7269288     0.00     0.00  TList<char>::GetElement(int)
+  1.15      0.79     0.01  2474156     0.00     0.00  PositionInTree::PositionInTree(Arch*, int)
+  1.15      0.80     0.01  1650168     0.00     0.00  SuffixTreeBuilder::TryToAddLinkedVertex(Vertex*, SuffixTreeBuilder::ExtensionResult*, Vertex*)
+  1.15      0.81     0.01  1650116     0.00     0.00  Vertex::HasLinkedVertex()
+  1.15      0.81     0.01  1649071     0.00     0.00  SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int)
+  1.15      0.82     0.01  1237627     0.00     0.00  TList<char>::Add(char)
+  1.15      0.83     0.01   825089     0.00     0.00  TList<char>::GetCount()
+  1.15      0.84     0.01   824039     0.00     0.00  SuffixTreeBuilder::FindEndOfSuffix(Vertex*, int, int)
+  1.15      0.85     0.01   824013     0.00     0.00  Arch::ChangeStartIndex(int)
+  1.15      0.86     0.01   412543     0.00     0.00  Parser::CanRead(int, _IO_FILE*)
+  0.57      0.87     0.01   824013     0.00     0.00  TList<Arch*>::Remove(Arch*)
+  0.00      0.87     0.00  5282379     0.00     0.00  Arch::GetStartIndex()
+  0.00      0.87     0.00  3301407     0.00     0.00  PositionInTree::IsInVertex()
+  0.00      0.87     0.00  3297970     0.00     0.00  Arch::GetFinishIndex(int)
+  0.00      0.87     0.00  3222078     0.00     0.00  StringComparer::AreEqual(int, int)
+  0.00      0.87     0.00  2473111     0.00     0.00  Arch::SetPrevVertex(Vertex*)
+  0.00      0.87     0.00  2473110     0.00     0.00  PositionInTree::GetIndexInArch()
+  0.00      0.87     0.00  2473084     0.00     0.00  PositionInTree::GetArch()
+  0.00      0.87     0.00  1650169     0.00     0.00  SuffixTreeBuilder::ExtensionResult::ExtensionResult(PositionInTree*, Vertex*, bool)
+  0.00      0.87     0.00  1650168     0.00     0.00  SuffixTreeBuilder::ExtendFromPosition(PositionInTree*, int, int)
+  0.00      0.87     0.00  1649123     0.00     0.00  PositionInTree::IsInArch()
+  0.00      0.87     0.00  1649097     0.00     0.00  Vertex::IsRoot()
+  0.00      0.87     0.00  1649071     0.00     0.00  PositionInTree::IsLastArchIndex(int)
+  0.00      0.87     0.00  1648052     0.00     0.00  Arch::GetPrevVertex()
+  0.00      0.87     0.00   826322     0.00     0.00  SuffixTreeBuilder::FindNextArch(Vertex*, int)
+  0.00      0.87     0.00   826155     0.00     0.00  PositionInTree::GetVertex()
+  0.00      0.87     0.00   826155     0.00     0.00  PositionInTree::PositionInTree(Vertex*)
+  0.00      0.87     0.00   825086     0.00     0.00  StringComparer::GetStringCount()
+  0.00      0.87     0.00   825085     0.00     0.00  Arch::ChangeFinishIndex(int)
+  0.00      0.87     0.00   825084     0.00     0.00  SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*)
+  0.00      0.87     0.00   825031     0.00     0.00  Vertex::GetLinkedVertex()
+  0.00      0.87     0.00   824886     0.00     0.00  Arch::GetLength(int)
+  0.00      0.87     0.00   824014     0.00     0.00  TList<Arch*>::TList()
+  0.00      0.87     0.00   824013     0.00     0.00  Arch::SetNextVertex(Vertex*)
+  0.00      0.87     0.00   824013     0.00     0.00  Vertex::GetIncomeArch()
+  0.00      0.87     0.00   824013     0.00     0.00  Vertex::AddLinkedVertex(Vertex*)
+  0.00      0.87     0.00   824013     0.00     0.00  Vertex::RemoveOutcomeArch(Arch*)
+  0.00      0.87     0.00   412543     0.00     0.00  Parser::IsEndOfLine(int)
+  0.00      0.87     0.00   412542     0.00     0.00  Parser::IsEndOfFile(_IO_FILE*)
+  0.00      0.87     0.00   412542     0.00     0.00  Parser::IsEndOfFile(int)
+  0.00      0.87     0.00   412542     0.00     0.00  Parser::IsSeparator(int)
+  0.00      0.87     0.00   412136     0.00     0.00  Arch::GetRealLength()
+  0.00      0.87     0.00     1436     0.00     0.00  SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int)
+  0.00      0.87     0.00      365     0.00     0.00  Arch::IsLeaf()
+  0.00      0.87     0.00       26     0.00     0.00  PositionInTree::GetArchPrevVertex()
+  0.00      0.87     0.00       26     0.00     0.00  PositionInTree::GetArchStartIndex()
+  0.00      0.87     0.00        6     0.00     0.00  SuffixTree::FindMinArch(Vertex*)
+  0.00      0.87     0.00        2     0.00     0.00  TList<char>::TrimExcess()
+  0.00      0.87     0.00        2     0.00     0.00  TList<char>::TList()
+  0.00      0.87     0.00        2     0.00     0.00  TList<char>::~TList()
+  0.00      0.87     0.00        1     0.00     0.00  SuffixTree::GetRoot()
+  0.00      0.87     0.00        1     0.00     0.00  SuffixTree::SuffixTree(TList<char>*, Vertex*)
+  0.00      0.87     0.00        1     0.00   306.70  SuffixTree::~SuffixTree()
+  0.00      0.87     0.00        1     0.00     3.90  Linearizator::AddCopyToEnd(TList<char>*)
+  0.00      0.87     0.00        1     0.00   310.60  Linearizator::FindMinString(SuffixTree*, int, TList<char>*)
+  0.00      0.87     0.00        1     0.00   856.67  Linearizator::Linearize(TList<char>*)
+  0.00      0.87     0.00        1     0.00     0.00  StringComparer::AddLastChar()
+  0.00      0.87     0.00        1     0.00     0.00  StringComparer::GetString()
+  0.00      0.87     0.00        1     0.00     0.00  StringComparer::StringComparer(TList<char>*)
+  0.00      0.87     0.00        1     0.00     0.00  SuffixTreeBuilder::AddFirstElement(Vertex*)
+  0.00      0.87     0.00        1     0.00   207.41  SuffixTreeBuilder::ChangeLastIndex(Vertex*)
+  0.00      0.87     0.00        1     0.00     0.00  SuffixTreeBuilder::SuffixTreeBuilder(StringComparer*)
+  0.00      0.87     0.00        1     0.00     0.00  SuffixTreeBuilder::~SuffixTreeBuilder()
+  0.00      0.87     0.00        1     0.00     0.00  TList<char>::GetElements()
+  0.00      0.87     0.00        1     0.00    13.33  Parser::ReadString(_IO_FILE*)
+  0.00      0.87     0.00        1     0.00     0.00  Parser::PrintResult(TList<char>*)
+  0.00      0.87     0.00        1     0.00   870.00  Worker::Execute(_IO_FILE*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 1.15% of 0.87 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.87                 main [1]
+                0.00    0.87       1/1           Worker::Execute(_IO_FILE*) [2]
+-----------------------------------------------
+                0.00    0.87       1/1           main [1]
+[2]    100.0    0.00    0.87       1         Worker::Execute(_IO_FILE*) [2]
+                0.00    0.86       1/1           Linearizator::Linearize(TList<char>*) [3]
+                0.00    0.01       1/1           Parser::ReadString(_IO_FILE*) [26]
+                0.00    0.00       2/2           TList<char>::~TList() [76]
+                0.00    0.00       1/1           Parser::PrintResult(TList<char>*) [84]
+-----------------------------------------------
+                0.00    0.86       1/1           Worker::Execute(_IO_FILE*) [2]
+[3]     98.5    0.00    0.86       1         Linearizator::Linearize(TList<char>*) [3]
+                0.04    0.50       1/1           SuffixTreeBuilder::BuildTree() [4]
+                0.00    0.31       1/1           Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+                0.00    0.00       1/1           Linearizator::AddCopyToEnd(TList<char>*) [38]
+                0.00    0.00       1/825089      TList<char>::GetCount() [30]
+                0.00    0.00       1/1           StringComparer::StringComparer(TList<char>*) [80]
+                0.00    0.00       1/1           SuffixTreeBuilder::SuffixTreeBuilder(StringComparer*) [81]
+                0.00    0.00       1/1           SuffixTreeBuilder::~SuffixTreeBuilder() [82]
+-----------------------------------------------
+                0.04    0.50       1/1           Linearizator::Linearize(TList<char>*) [3]
+[4]     62.3    0.04    0.50       1         SuffixTreeBuilder::BuildTree() [4]
+                0.00    0.21       1/1           SuffixTreeBuilder::ChangeLastIndex(Vertex*) [9]
+                0.00    0.20 1650168/1650168     SuffixTreeBuilder::ExtendFromPosition(PositionInTree*, int, int) [10]
+                0.00    0.07  825084/825084      SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+                0.01    0.01 1650168/1650168     SuffixTreeBuilder::TryToAddLinkedVertex(Vertex*, SuffixTreeBuilder::ExtensionResult*, Vertex*) [24]
+                0.00    0.01  825086/825086      StringComparer::GetStringCount() [34]
+                0.00    0.00       1/1           SuffixTreeBuilder::AddFirstElement(Vertex*) [41]
+                0.00    0.00       1/824014      Vertex::Vertex(Arch*) [22]
+                0.00    0.00       1/1           StringComparer::AddLastChar() [42]
+                0.00    0.00  825058/826155      PositionInTree::PositionInTree(Vertex*) [58]
+                0.00    0.00       1/1650169     SuffixTreeBuilder::ExtensionResult::ExtensionResult(PositionInTree*, Vertex*, bool) [52]
+                0.00    0.00       1/1           StringComparer::GetString() [79]
+                0.00    0.00       1/1           SuffixTree::SuffixTree(TList<char>*, Vertex*) [78]
+-----------------------------------------------
+                0.00    0.00       5/3299439     Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+                0.00    0.00     339/3299439     SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+                0.00    0.00     899/3299439     SuffixTreeBuilder::FindEndOfSuffix(Vertex*, int, int) [17]
+                0.17    0.00 1649098/3299439     SuffixTree::TreeFullDelete(Vertex*) [7]
+                0.17    0.00 1649098/3299439     SuffixTreeBuilder::ChangeLastIndex(Vertex*) [9]
+[5]     40.2    0.35    0.00 3299439         Arch::GetNextVertex() [5]
+-----------------------------------------------
+                0.00    0.31       1/1           Linearizator::Linearize(TList<char>*) [3]
+[6]     35.7    0.00    0.31       1         Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+                0.00    0.31       1/1           SuffixTree::~SuffixTree() [8]
+                0.00    0.00  412542/1237627     TList<char>::Add(char) [29]
+                0.00    0.00  412542/7269288     TList<char>::GetElement(int) [27]
+                0.00    0.00       6/6           SuffixTree::FindMinArch(Vertex*) [40]
+                0.00    0.00       5/3299439     Arch::GetNextVertex() [5]
+                0.00    0.00  412542/5282379     Arch::GetStartIndex() [46]
+                0.00    0.00  412136/412136      Arch::GetRealLength() [70]
+                0.00    0.00       1/2           TList<char>::TList() [75]
+                0.00    0.00       1/1           SuffixTree::GetRoot() [77]
+                0.00    0.00       1/2           TList<char>::TrimExcess() [74]
+-----------------------------------------------
+                              824013             SuffixTree::TreeFullDelete(Vertex*) [7]
+                0.02    0.29       1/1           SuffixTree::~SuffixTree() [8]
+[7]     35.3    0.02    0.29       1+824013  SuffixTree::TreeFullDelete(Vertex*) [7]
+                0.17    0.00 1649098/3299439     Arch::GetNextVertex() [5]
+                0.03    0.05  824014/824014      Vertex::~Vertex() [14]
+                0.02    0.00 1649098/7345971     TList<Arch*>::GetElement(int) [13]
+                0.01    0.00 2473112/7344729     TList<Arch*>::GetCount() [20]
+                0.01    0.00  824014/2474356     Vertex::GetOutcomeArches() [23]
+                              824013             SuffixTree::TreeFullDelete(Vertex*) [7]
+-----------------------------------------------
+                0.00    0.31       1/1           Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+[8]     35.3    0.00    0.31       1         SuffixTree::~SuffixTree() [8]
+                0.02    0.29       1/1           SuffixTree::TreeFullDelete(Vertex*) [7]
+-----------------------------------------------
+                              824013             SuffixTreeBuilder::ChangeLastIndex(Vertex*) [9]
+                0.00    0.21       1/1           SuffixTreeBuilder::BuildTree() [4]
+[9]     23.8    0.00    0.21       1+824013  SuffixTreeBuilder::ChangeLastIndex(Vertex*) [9]
+                0.17    0.00 1649098/3299439     Arch::GetNextVertex() [5]
+                0.02    0.00 1649098/7345971     TList<Arch*>::GetElement(int) [13]
+                0.01    0.00  824014/2474356     Vertex::GetOutcomeArches() [23]
+                0.00    0.00  824014/7344729     TList<Arch*>::GetCount() [20]
+                0.00    0.00  825085/825085      Arch::ChangeFinishIndex(int) [59]
+                              824013             SuffixTreeBuilder::ChangeLastIndex(Vertex*) [9]
+-----------------------------------------------
+                0.00    0.20 1650168/1650168     SuffixTreeBuilder::BuildTree() [4]
+[10]    23.1    0.00    0.20 1650168         SuffixTreeBuilder::ExtendFromPosition(PositionInTree*, int, int) [10]
+                0.01    0.19 1649071/1649071     SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+                0.00    0.00    1097/1436        SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int) [39]
+                0.00    0.00 1650168/3301407     PositionInTree::IsInVertex() [47]
+                0.00    0.00 1649071/1649123     PositionInTree::IsInArch() [53]
+                0.00    0.00    1097/826155      PositionInTree::GetVertex() [57]
+-----------------------------------------------
+                0.01    0.19 1649071/1649071     SuffixTreeBuilder::ExtendFromPosition(PositionInTree*, int, int) [10]
+[11]    23.1    0.01    0.19 1649071         SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+                0.04    0.14  824013/824013      SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+                0.00    0.00 1648706/3222078     StringComparer::AreEqual(int, int) [35]
+                0.00    0.00  824719/2474156     PositionInTree::PositionInTree(Arch*, int) [33]
+                0.00    0.00     339/3299439     Arch::GetNextVertex() [5]
+                0.00    0.00     339/1436        SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int) [39]
+                0.00    0.00 1649071/2473084     PositionInTree::GetArch() [51]
+                0.00    0.00 1649071/2473110     PositionInTree::GetIndexInArch() [50]
+                0.00    0.00 1649071/1649071     PositionInTree::IsLastArchIndex(int) [55]
+                0.00    0.00  824719/1650169     SuffixTreeBuilder::ExtensionResult::ExtensionResult(PositionInTree*, Vertex*, bool) [52]
+                0.00    0.00     365/365         Arch::IsLeaf() [71]
+-----------------------------------------------
+                0.04    0.14  824013/824013      SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+[12]    21.1    0.04    0.14  824013         SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+                0.02    0.04 2472039/2473111     Vertex::AddOutcomeArch(Arch*) [16]
+                0.03    0.00  824013/824014      Vertex::Vertex(Arch*) [22]
+                0.03    0.00 1648026/1649098     Arch::Arch(int, int, int) [21]
+                0.01    0.00  824013/824013      Arch::ChangeStartIndex(int) [31]
+                0.00    0.01  824013/824013      Vertex::RemoveOutcomeArch(Arch*) [37]
+                0.00    0.00  824013/2474156     PositionInTree::PositionInTree(Arch*, int) [33]
+                0.00    0.00 1648026/5282379     Arch::GetStartIndex() [46]
+                0.00    0.00  824013/2473084     PositionInTree::GetArch() [51]
+                0.00    0.00  824013/2473110     PositionInTree::GetIndexInArch() [50]
+                0.00    0.00  824013/1648052     Arch::GetPrevVertex() [56]
+                0.00    0.00  824013/1650169     SuffixTreeBuilder::ExtensionResult::ExtensionResult(PositionInTree*, Vertex*, bool) [52]
+-----------------------------------------------
+                0.00    0.00      54/7345971     SuffixTree::FindMinArch(Vertex*) [40]
+                0.02    0.00 1649098/7345971     SuffixTree::TreeFullDelete(Vertex*) [7]
+                0.02    0.00 1649098/7345971     SuffixTreeBuilder::ChangeLastIndex(Vertex*) [9]
+                0.02    0.00 1649098/7345971     Vertex::~Vertex() [14]
+                0.03    0.00 2398623/7345971     SuffixTreeBuilder::FindNextArch(Vertex*, int) [18]
+[13]    11.5    0.10    0.00 7345971         TList<Arch*>::GetElement(int) [13]
+-----------------------------------------------
+                0.03    0.05  824014/824014      SuffixTree::TreeFullDelete(Vertex*) [7]
+[14]     8.3    0.03    0.05  824014         Vertex::~Vertex() [14]
+                0.02    0.00 1649098/7345971     TList<Arch*>::GetElement(int) [13]
+                0.01    0.00  824014/824014      TList<Arch*>::~TList() [25]
+                0.01    0.00 2473112/7344729     TList<Arch*>::GetCount() [20]
+-----------------------------------------------
+                0.00    0.07  825084/825084      SuffixTreeBuilder::BuildTree() [4]
+[15]     7.9    0.00    0.07  825084         SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+                0.01    0.05  824039/824039      SuffixTreeBuilder::FindEndOfSuffix(Vertex*, int, int) [17]
+                0.01    0.00  825058/1650116     Vertex::HasLinkedVertex() [28]
+                0.00    0.00 1649097/1649097     Vertex::IsRoot() [54]
+                0.00    0.00  825084/3301407     PositionInTree::IsInVertex() [47]
+                0.00    0.00  825058/826155      PositionInTree::GetVertex() [57]
+                0.00    0.00  825031/825031      Vertex::GetLinkedVertex() [60]
+                0.00    0.00  824013/824013      Vertex::GetIncomeArch() [64]
+                0.00    0.00  824013/1648052     Arch::GetPrevVertex() [56]
+                0.00    0.00  824013/3297970     Arch::GetFinishIndex(int) [48]
+                0.00    0.00  824013/5282379     Arch::GetStartIndex() [46]
+                0.00    0.00    1045/826155      PositionInTree::PositionInTree(Vertex*) [58]
+                0.00    0.00      26/1649123     PositionInTree::IsInArch() [53]
+                0.00    0.00      26/26          PositionInTree::GetArchPrevVertex() [72]
+                0.00    0.00      26/26          PositionInTree::GetArchStartIndex() [73]
+                0.00    0.00      26/2473110     PositionInTree::GetIndexInArch() [50]
+-----------------------------------------------
+                0.00    0.00       1/2473111     SuffixTreeBuilder::AddFirstElement(Vertex*) [41]
+                0.00    0.00    1071/2473111     SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int) [39]
+                0.02    0.04 2472039/2473111     SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+[16]     7.5    0.03    0.04 2473111         Vertex::AddOutcomeArch(Arch*) [16]
+                0.04    0.00 2473111/2473111     TList<Arch*>::Add(Arch*) [19]
+                0.00    0.00 2473111/2473111     Arch::SetPrevVertex(Vertex*) [49]
+-----------------------------------------------
+                0.01    0.05  824039/824039      SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+[17]     7.3    0.01    0.05  824039         SuffixTreeBuilder::FindEndOfSuffix(Vertex*, int, int) [17]
+                0.00    0.05  824886/826322      SuffixTreeBuilder::FindNextArch(Vertex*, int) [18]
+                0.00    0.00  823987/2474156     PositionInTree::PositionInTree(Arch*, int) [33]
+                0.00    0.00     899/3299439     Arch::GetNextVertex() [5]
+                0.00    0.00  824886/824886      Arch::GetLength(int) [61]
+                0.00    0.00  823987/5282379     Arch::GetStartIndex() [46]
+                0.00    0.00      52/826155      PositionInTree::PositionInTree(Vertex*) [58]
+-----------------------------------------------
+                0.00    0.00    1436/826322      SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int) [39]
+                0.00    0.05  824886/826322      SuffixTreeBuilder::FindEndOfSuffix(Vertex*, int, int) [17]
+[18]     5.8    0.00    0.05  826322         SuffixTreeBuilder::FindNextArch(Vertex*, int) [18]
+                0.03    0.00 2398623/7345971     TList<Arch*>::GetElement(int) [13]
+                0.01    0.00  826322/2474356     Vertex::GetOutcomeArches() [23]
+                0.01    0.00 1574443/7344729     TList<Arch*>::GetCount() [20]
+                0.00    0.00 1573372/3222078     StringComparer::AreEqual(int, int) [35]
+                0.00    0.00 1573372/5282379     Arch::GetStartIndex() [46]
+-----------------------------------------------
+                0.04    0.00 2473111/2473111     Vertex::AddOutcomeArch(Arch*) [16]
+[19]     4.6    0.04    0.00 2473111         TList<Arch*>::Add(Arch*) [19]
+-----------------------------------------------
+                0.00    0.00      48/7344729     SuffixTree::FindMinArch(Vertex*) [40]
+                0.00    0.00  824014/7344729     SuffixTreeBuilder::ChangeLastIndex(Vertex*) [9]
+                0.01    0.00 1574443/7344729     SuffixTreeBuilder::FindNextArch(Vertex*, int) [18]
+                0.01    0.00 2473112/7344729     SuffixTree::TreeFullDelete(Vertex*) [7]
+                0.01    0.00 2473112/7344729     Vertex::~Vertex() [14]
+[20]     3.4    0.03    0.00 7344729         TList<Arch*>::GetCount() [20]
+-----------------------------------------------
+                0.00    0.00       1/1649098     SuffixTreeBuilder::AddFirstElement(Vertex*) [41]
+                0.00    0.00    1071/1649098     SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int) [39]
+                0.03    0.00 1648026/1649098     SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+[21]     3.4    0.03    0.00 1649098         Arch::Arch(int, int, int) [21]
+-----------------------------------------------
+                0.00    0.00       1/824014      SuffixTreeBuilder::BuildTree() [4]
+                0.03    0.00  824013/824014      SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+[22]     3.4    0.03    0.00  824014         Vertex::Vertex(Arch*) [22]
+                0.00    0.00  824014/824014      TList<Arch*>::TList() [62]
+                0.00    0.00  824013/824013      Arch::SetNextVertex(Vertex*) [63]
+-----------------------------------------------
+                0.00    0.00       6/2474356     SuffixTree::FindMinArch(Vertex*) [40]
+                0.01    0.00  824014/2474356     SuffixTree::TreeFullDelete(Vertex*) [7]
+                0.01    0.00  824014/2474356     SuffixTreeBuilder::ChangeLastIndex(Vertex*) [9]
+                0.01    0.00  826322/2474356     SuffixTreeBuilder::FindNextArch(Vertex*, int) [18]
+[23]     2.3    0.02    0.00 2474356         Vertex::GetOutcomeArches() [23]
+-----------------------------------------------
+                0.01    0.01 1650168/1650168     SuffixTreeBuilder::BuildTree() [4]
+[24]     1.7    0.01    0.01 1650168         SuffixTreeBuilder::TryToAddLinkedVertex(Vertex*, SuffixTreeBuilder::ExtensionResult*, Vertex*) [24]
+                0.01    0.00  825058/1650116     Vertex::HasLinkedVertex() [28]
+                0.00    0.00  824013/824013      Vertex::AddLinkedVertex(Vertex*) [65]
+-----------------------------------------------
+                0.01    0.00  824014/824014      Vertex::~Vertex() [14]
+[25]     1.7    0.01    0.00  824014         TList<Arch*>::~TList() [25]
+-----------------------------------------------
+                0.00    0.01       1/1           Worker::Execute(_IO_FILE*) [2]
+[26]     1.5    0.00    0.01       1         Parser::ReadString(_IO_FILE*) [26]
+                0.01    0.00  412543/412543      Parser::CanRead(int, _IO_FILE*) [32]
+                0.00    0.00  412542/1237627     TList<char>::Add(char) [29]
+                0.00    0.00       1/825089      TList<char>::GetCount() [30]
+                0.00    0.00       1/2           TList<char>::TList() [75]
+-----------------------------------------------
+                0.00    0.00      48/7269288     SuffixTree::FindMinArch(Vertex*) [40]
+                0.00    0.00  412542/7269288     Linearizator::AddCopyToEnd(TList<char>*) [38]
+                0.00    0.00  412542/7269288     Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+                0.01    0.00 6444156/7269288     StringComparer::AreEqual(int, int) [35]
+[27]     1.1    0.01    0.00 7269288         TList<char>::GetElement(int) [27]
+-----------------------------------------------
+                0.01    0.00  825058/1650116     SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+                0.01    0.00  825058/1650116     SuffixTreeBuilder::TryToAddLinkedVertex(Vertex*, SuffixTreeBuilder::ExtensionResult*, Vertex*) [24]
+[28]     1.1    0.01    0.00 1650116         Vertex::HasLinkedVertex() [28]
+-----------------------------------------------
+                0.00    0.00       1/1237627     StringComparer::AddLastChar() [42]
+                0.00    0.00  412542/1237627     Linearizator::AddCopyToEnd(TList<char>*) [38]
+                0.00    0.00  412542/1237627     Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+                0.00    0.00  412542/1237627     Parser::ReadString(_IO_FILE*) [26]
+[29]     1.1    0.01    0.00 1237627         TList<char>::Add(char) [29]
+-----------------------------------------------
+                0.00    0.00       1/825089      Linearizator::Linearize(TList<char>*) [3]
+                0.00    0.00       1/825089      Linearizator::AddCopyToEnd(TList<char>*) [38]
+                0.00    0.00       1/825089      Parser::ReadString(_IO_FILE*) [26]
+                0.01    0.00  825086/825089      StringComparer::GetStringCount() [34]
+[30]     1.1    0.01    0.00  825089         TList<char>::GetCount() [30]
+-----------------------------------------------
+                0.01    0.00  824013/824013      SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+[31]     1.1    0.01    0.00  824013         Arch::ChangeStartIndex(int) [31]
+-----------------------------------------------
+                0.01    0.00  412543/412543      Parser::ReadString(_IO_FILE*) [26]
+[32]     1.1    0.01    0.00  412543         Parser::CanRead(int, _IO_FILE*) [32]
+                0.00    0.00  412543/412543      Parser::IsEndOfLine(int) [66]
+                0.00    0.00  412542/412542      Parser::IsEndOfFile(int) [68]
+                0.00    0.00  412542/412542      Parser::IsEndOfFile(_IO_FILE*) [67]
+                0.00    0.00  412542/412542      Parser::IsSeparator(int) [69]
+-----------------------------------------------
+                0.00    0.00       1/2474156     SuffixTreeBuilder::AddFirstElement(Vertex*) [41]
+                0.00    0.00    1436/2474156     SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int) [39]
+                0.00    0.00  823987/2474156     SuffixTreeBuilder::FindEndOfSuffix(Vertex*, int, int) [17]
+                0.00    0.00  824013/2474156     SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+                0.00    0.00  824719/2474156     SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+[33]     1.1    0.01    0.00 2474156         PositionInTree::PositionInTree(Arch*, int) [33]
+-----------------------------------------------
+                0.00    0.01  825086/825086      SuffixTreeBuilder::BuildTree() [4]
+[34]     1.1    0.00    0.01  825086         StringComparer::GetStringCount() [34]
+                0.01    0.00  825086/825089      TList<char>::GetCount() [30]
+-----------------------------------------------
+                0.00    0.00 1573372/3222078     SuffixTreeBuilder::FindNextArch(Vertex*, int) [18]
+                0.00    0.00 1648706/3222078     SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+[35]     1.0    0.00    0.01 3222078         StringComparer::AreEqual(int, int) [35]
+                0.01    0.00 6444156/7269288     TList<char>::GetElement(int) [27]
+-----------------------------------------------
+                0.01    0.00  824013/824013      Vertex::RemoveOutcomeArch(Arch*) [37]
+[36]     0.6    0.01    0.00  824013         TList<Arch*>::Remove(Arch*) [36]
+-----------------------------------------------
+                0.00    0.01  824013/824013      SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+[37]     0.6    0.00    0.01  824013         Vertex::RemoveOutcomeArch(Arch*) [37]
+                0.01    0.00  824013/824013      TList<Arch*>::Remove(Arch*) [36]
+-----------------------------------------------
+                0.00    0.00       1/1           Linearizator::Linearize(TList<char>*) [3]
+[38]     0.4    0.00    0.00       1         Linearizator::AddCopyToEnd(TList<char>*) [38]
+                0.00    0.00  412542/1237627     TList<char>::Add(char) [29]
+                0.00    0.00  412542/7269288     TList<char>::GetElement(int) [27]
+                0.00    0.00       1/825089      TList<char>::GetCount() [30]
+-----------------------------------------------
+                0.00    0.00     339/1436        SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+                0.00    0.00    1097/1436        SuffixTreeBuilder::ExtendFromPosition(PositionInTree*, int, int) [10]
+[39]     0.0    0.00    0.00    1436         SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int) [39]
+                0.00    0.00    1436/826322      SuffixTreeBuilder::FindNextArch(Vertex*, int) [18]
+                0.00    0.00    1071/2473111     Vertex::AddOutcomeArch(Arch*) [16]
+                0.00    0.00    1071/1649098     Arch::Arch(int, int, int) [21]
+                0.00    0.00    1436/2474156     PositionInTree::PositionInTree(Arch*, int) [33]
+                0.00    0.00    1436/1650169     SuffixTreeBuilder::ExtensionResult::ExtensionResult(PositionInTree*, Vertex*, bool) [52]
+                0.00    0.00     365/5282379     Arch::GetStartIndex() [46]
+-----------------------------------------------
+                0.00    0.00       6/6           Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+[40]     0.0    0.00    0.00       6         SuffixTree::FindMinArch(Vertex*) [40]
+                0.00    0.00      54/7345971     TList<Arch*>::GetElement(int) [13]
+                0.00    0.00      48/7344729     TList<Arch*>::GetCount() [20]
+                0.00    0.00      48/7269288     TList<char>::GetElement(int) [27]
+                0.00    0.00       6/2474356     Vertex::GetOutcomeArches() [23]
+                0.00    0.00      48/5282379     Arch::GetStartIndex() [46]
+-----------------------------------------------
+                0.00    0.00       1/1           SuffixTreeBuilder::BuildTree() [4]
+[41]     0.0    0.00    0.00       1         SuffixTreeBuilder::AddFirstElement(Vertex*) [41]
+                0.00    0.00       1/2473111     Vertex::AddOutcomeArch(Arch*) [16]
+                0.00    0.00       1/1649098     Arch::Arch(int, int, int) [21]
+                0.00    0.00       1/2474156     PositionInTree::PositionInTree(Arch*, int) [33]
+-----------------------------------------------
+                0.00    0.00       1/1           SuffixTreeBuilder::BuildTree() [4]
+[42]     0.0    0.00    0.00       1         StringComparer::AddLastChar() [42]
+                0.00    0.00       1/1237627     TList<char>::Add(char) [29]
+                0.00    0.00       1/2           TList<char>::TrimExcess() [74]
+-----------------------------------------------
+                0.00    0.00      26/5282379     PositionInTree::GetArchStartIndex() [73]
+                0.00    0.00      48/5282379     SuffixTree::FindMinArch(Vertex*) [40]
+                0.00    0.00     365/5282379     SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int) [39]
+                0.00    0.00  412542/5282379     Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+                0.00    0.00  823987/5282379     SuffixTreeBuilder::FindEndOfSuffix(Vertex*, int, int) [17]
+                0.00    0.00  824013/5282379     SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+                0.00    0.00 1573372/5282379     SuffixTreeBuilder::FindNextArch(Vertex*, int) [18]
+                0.00    0.00 1648026/5282379     SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+[46]     0.0    0.00    0.00 5282379         Arch::GetStartIndex() [46]
+-----------------------------------------------
+                0.00    0.00  825084/3301407     SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+                0.00    0.00  826155/3301407     PositionInTree::GetVertex() [57]
+                0.00    0.00 1650168/3301407     SuffixTreeBuilder::ExtendFromPosition(PositionInTree*, int, int) [10]
+[47]     0.0    0.00    0.00 3301407         PositionInTree::IsInVertex() [47]
+-----------------------------------------------
+                0.00    0.00  824013/3297970     SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+                0.00    0.00  824886/3297970     Arch::GetLength(int) [61]
+                0.00    0.00 1649071/3297970     PositionInTree::IsLastArchIndex(int) [55]
+[48]     0.0    0.00    0.00 3297970         Arch::GetFinishIndex(int) [48]
+-----------------------------------------------
+                0.00    0.00 2473111/2473111     Vertex::AddOutcomeArch(Arch*) [16]
+[49]     0.0    0.00    0.00 2473111         Arch::SetPrevVertex(Vertex*) [49]
+-----------------------------------------------
+                0.00    0.00      26/2473110     SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+                0.00    0.00  824013/2473110     SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+                0.00    0.00 1649071/2473110     SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+[50]     0.0    0.00    0.00 2473110         PositionInTree::GetIndexInArch() [50]
+-----------------------------------------------
+                0.00    0.00  824013/2473084     SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+                0.00    0.00 1649071/2473084     SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+[51]     0.0    0.00    0.00 2473084         PositionInTree::GetArch() [51]
+-----------------------------------------------
+                0.00    0.00       1/1650169     SuffixTreeBuilder::BuildTree() [4]
+                0.00    0.00    1436/1650169     SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int) [39]
+                0.00    0.00  824013/1650169     SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+                0.00    0.00  824719/1650169     SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+[52]     0.0    0.00    0.00 1650169         SuffixTreeBuilder::ExtensionResult::ExtensionResult(PositionInTree*, Vertex*, bool) [52]
+-----------------------------------------------
+                0.00    0.00      26/1649123     PositionInTree::GetArchPrevVertex() [72]
+                0.00    0.00      26/1649123     SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+                0.00    0.00 1649071/1649123     SuffixTreeBuilder::ExtendFromPosition(PositionInTree*, int, int) [10]
+[53]     0.0    0.00    0.00 1649123         PositionInTree::IsInArch() [53]
+-----------------------------------------------
+                0.00    0.00 1649097/1649097     SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+[54]     0.0    0.00    0.00 1649097         Vertex::IsRoot() [54]
+-----------------------------------------------
+                0.00    0.00 1649071/1649071     SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+[55]     0.0    0.00    0.00 1649071         PositionInTree::IsLastArchIndex(int) [55]
+                0.00    0.00 1649071/3297970     Arch::GetFinishIndex(int) [48]
+-----------------------------------------------
+                0.00    0.00      26/1648052     PositionInTree::GetArchPrevVertex() [72]
+                0.00    0.00  824013/1648052     SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+                0.00    0.00  824013/1648052     SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [12]
+[56]     0.0    0.00    0.00 1648052         Arch::GetPrevVertex() [56]
+-----------------------------------------------
+                0.00    0.00    1097/826155      SuffixTreeBuilder::ExtendFromPosition(PositionInTree*, int, int) [10]
+                0.00    0.00  825058/826155      SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+[57]     0.0    0.00    0.00  826155         PositionInTree::GetVertex() [57]
+                0.00    0.00  826155/3301407     PositionInTree::IsInVertex() [47]
+-----------------------------------------------
+                0.00    0.00      52/826155      SuffixTreeBuilder::FindEndOfSuffix(Vertex*, int, int) [17]
+                0.00    0.00    1045/826155      SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+                0.00    0.00  825058/826155      SuffixTreeBuilder::BuildTree() [4]
+[58]     0.0    0.00    0.00  826155         PositionInTree::PositionInTree(Vertex*) [58]
+-----------------------------------------------
+                0.00    0.00  825085/825085      SuffixTreeBuilder::ChangeLastIndex(Vertex*) [9]
+[59]     0.0    0.00    0.00  825085         Arch::ChangeFinishIndex(int) [59]
+-----------------------------------------------
+                0.00    0.00  825031/825031      SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+[60]     0.0    0.00    0.00  825031         Vertex::GetLinkedVertex() [60]
+-----------------------------------------------
+                0.00    0.00  824886/824886      SuffixTreeBuilder::FindEndOfSuffix(Vertex*, int, int) [17]
+[61]     0.0    0.00    0.00  824886         Arch::GetLength(int) [61]
+                0.00    0.00  824886/3297970     Arch::GetFinishIndex(int) [48]
+-----------------------------------------------
+                0.00    0.00  824014/824014      Vertex::Vertex(Arch*) [22]
+[62]     0.0    0.00    0.00  824014         TList<Arch*>::TList() [62]
+-----------------------------------------------
+                0.00    0.00  824013/824013      Vertex::Vertex(Arch*) [22]
+[63]     0.0    0.00    0.00  824013         Arch::SetNextVertex(Vertex*) [63]
+-----------------------------------------------
+                0.00    0.00  824013/824013      SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+[64]     0.0    0.00    0.00  824013         Vertex::GetIncomeArch() [64]
+-----------------------------------------------
+                0.00    0.00  824013/824013      SuffixTreeBuilder::TryToAddLinkedVertex(Vertex*, SuffixTreeBuilder::ExtensionResult*, Vertex*) [24]
+[65]     0.0    0.00    0.00  824013         Vertex::AddLinkedVertex(Vertex*) [65]
+-----------------------------------------------
+                0.00    0.00  412543/412543      Parser::CanRead(int, _IO_FILE*) [32]
+[66]     0.0    0.00    0.00  412543         Parser::IsEndOfLine(int) [66]
+-----------------------------------------------
+                0.00    0.00  412542/412542      Parser::CanRead(int, _IO_FILE*) [32]
+[67]     0.0    0.00    0.00  412542         Parser::IsEndOfFile(_IO_FILE*) [67]
+-----------------------------------------------
+                0.00    0.00  412542/412542      Parser::CanRead(int, _IO_FILE*) [32]
+[68]     0.0    0.00    0.00  412542         Parser::IsEndOfFile(int) [68]
+-----------------------------------------------
+                0.00    0.00  412542/412542      Parser::CanRead(int, _IO_FILE*) [32]
+[69]     0.0    0.00    0.00  412542         Parser::IsSeparator(int) [69]
+-----------------------------------------------
+                0.00    0.00  412136/412136      Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+[70]     0.0    0.00    0.00  412136         Arch::GetRealLength() [70]
+-----------------------------------------------
+                0.00    0.00     365/365         SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [11]
+[71]     0.0    0.00    0.00     365         Arch::IsLeaf() [71]
+-----------------------------------------------
+                0.00    0.00      26/26          SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+[72]     0.0    0.00    0.00      26         PositionInTree::GetArchPrevVertex() [72]
+                0.00    0.00      26/1649123     PositionInTree::IsInArch() [53]
+                0.00    0.00      26/1648052     Arch::GetPrevVertex() [56]
+-----------------------------------------------
+                0.00    0.00      26/26          SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [15]
+[73]     0.0    0.00    0.00      26         PositionInTree::GetArchStartIndex() [73]
+                0.00    0.00      26/5282379     Arch::GetStartIndex() [46]
+-----------------------------------------------
+                0.00    0.00       1/2           Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+                0.00    0.00       1/2           StringComparer::AddLastChar() [42]
+[74]     0.0    0.00    0.00       2         TList<char>::TrimExcess() [74]
+-----------------------------------------------
+                0.00    0.00       1/2           Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+                0.00    0.00       1/2           Parser::ReadString(_IO_FILE*) [26]
+[75]     0.0    0.00    0.00       2         TList<char>::TList() [75]
+-----------------------------------------------
+                0.00    0.00       2/2           Worker::Execute(_IO_FILE*) [2]
+[76]     0.0    0.00    0.00       2         TList<char>::~TList() [76]
+-----------------------------------------------
+                0.00    0.00       1/1           Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [6]
+[77]     0.0    0.00    0.00       1         SuffixTree::GetRoot() [77]
+-----------------------------------------------
+                0.00    0.00       1/1           SuffixTreeBuilder::BuildTree() [4]
+[78]     0.0    0.00    0.00       1         SuffixTree::SuffixTree(TList<char>*, Vertex*) [78]
+-----------------------------------------------
+                0.00    0.00       1/1           SuffixTreeBuilder::BuildTree() [4]
+[79]     0.0    0.00    0.00       1         StringComparer::GetString() [79]
+-----------------------------------------------
+                0.00    0.00       1/1           Linearizator::Linearize(TList<char>*) [3]
+[80]     0.0    0.00    0.00       1         StringComparer::StringComparer(TList<char>*) [80]
+-----------------------------------------------
+                0.00    0.00       1/1           Linearizator::Linearize(TList<char>*) [3]
+[81]     0.0    0.00    0.00       1         SuffixTreeBuilder::SuffixTreeBuilder(StringComparer*) [81]
+-----------------------------------------------
+                0.00    0.00       1/1           Linearizator::Linearize(TList<char>*) [3]
+[82]     0.0    0.00    0.00       1         SuffixTreeBuilder::~SuffixTreeBuilder() [82]
+-----------------------------------------------
+                0.00    0.00       1/1           Parser::PrintResult(TList<char>*) [84]
+[83]     0.0    0.00    0.00       1         TList<char>::GetElements() [83]
+-----------------------------------------------
+                0.00    0.00       1/1           Worker::Execute(_IO_FILE*) [2]
+[84]     0.0    0.00    0.00       1         Parser::PrintResult(TList<char>*) [84]
+                0.00    0.00       1/1           TList<char>::GetElements() [83]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [40] SuffixTree::FindMinArch(Vertex*) [52] SuffixTreeBuilder::ExtensionResult::ExtensionResult(PositionInTree*, Vertex*, bool) [25] TList<Arch*>::~TList()
+   [7] SuffixTree::TreeFullDelete(Vertex*) [17] SuffixTreeBuilder::FindEndOfSuffix(Vertex*, int, int) [27] TList<char>::GetElement(int)
+  [77] SuffixTree::GetRoot()  [39] SuffixTreeBuilder::ExtendFromVertex(Vertex*, int, int) [74] TList<char>::TrimExcess()
+  [78] SuffixTree::SuffixTree(TList<char>*, Vertex*) [15] SuffixTreeBuilder::FindPlaceToExtend(PositionInTree*) [83] TList<char>::GetElements()
+   [8] SuffixTree::~SuffixTree() [10] SuffixTreeBuilder::ExtendFromPosition(PositionInTree*, int, int) [29] TList<char>::Add(char)
+  [38] Linearizator::AddCopyToEnd(TList<char>*) [24] SuffixTreeBuilder::TryToAddLinkedVertex(Vertex*, SuffixTreeBuilder::ExtensionResult*, Vertex*) [30] TList<char>::GetCount()
+   [6] Linearizator::FindMinString(SuffixTree*, int, TList<char>*) [12] SuffixTreeBuilder::ExtendByAddingNewVertex(PositionInTree*, int, int) [75] TList<char>::TList()
+   [3] Linearizator::Linearize(TList<char>*) [4] SuffixTreeBuilder::BuildTree() [76] TList<char>::~TList()
+  [47] PositionInTree::IsInVertex() [81] SuffixTreeBuilder::SuffixTreeBuilder(StringComparer*) [26] Parser::ReadString(_IO_FILE*)
+  [50] PositionInTree::GetIndexInArch() [82] SuffixTreeBuilder::~SuffixTreeBuilder() [67] Parser::IsEndOfFile(_IO_FILE*)
+  [55] PositionInTree::IsLastArchIndex(int) [5] Arch::GetNextVertex() [68] Parser::IsEndOfFile(int)
+  [72] PositionInTree::GetArchPrevVertex() [56] Arch::GetPrevVertex() [66] Parser::IsEndOfLine(int)
+  [73] PositionInTree::GetArchStartIndex() [70] Arch::GetRealLength() [69] Parser::IsSeparator(int)
+  [51] PositionInTree::GetArch() [46] Arch::GetStartIndex() [84] Parser::PrintResult(TList<char>*)
+  [53] PositionInTree::IsInArch() [63] Arch::SetNextVertex(Vertex*) [32] Parser::CanRead(int, _IO_FILE*)
+  [57] PositionInTree::GetVertex() [49] Arch::SetPrevVertex(Vertex*) [64] Vertex::GetIncomeArch()
+  [33] PositionInTree::PositionInTree(Arch*, int) [48] Arch::GetFinishIndex(int) [16] Vertex::AddOutcomeArch(Arch*)
+  [58] PositionInTree::PositionInTree(Vertex*) [31] Arch::ChangeStartIndex(int) [65] Vertex::AddLinkedVertex(Vertex*)
+  [42] StringComparer::AddLastChar() [59] Arch::ChangeFinishIndex(int) [60] Vertex::GetLinkedVertex()
+  [34] StringComparer::GetStringCount() [71] Arch::IsLeaf() [28] Vertex::HasLinkedVertex()
+  [35] StringComparer::AreEqual(int, int) [61] Arch::GetLength(int) [23] Vertex::GetOutcomeArches()
+  [79] StringComparer::GetString() [21] Arch::Arch(int, int, int) [37] Vertex::RemoveOutcomeArch(Arch*)
+  [80] StringComparer::StringComparer(TList<char>*) [13] TList<Arch*>::GetElement(int) [54] Vertex::IsRoot()
+  [18] SuffixTreeBuilder::FindNextArch(Vertex*, int) [19] TList<Arch*>::Add(Arch*) [22] Vertex::Vertex(Arch*)
+  [11] SuffixTreeBuilder::ExtendFromArch(PositionInTree*, int, int) [36] TList<Arch*>::Remove(Arch*) [14] Vertex::~Vertex()
+  [41] SuffixTreeBuilder::AddFirstElement(Vertex*) [20] TList<Arch*>::GetCount() [2] Worker::Execute(_IO_FILE*)
+   [9] SuffixTreeBuilder::ChangeLastIndex(Vertex*) [62] TList<Arch*>::TList()

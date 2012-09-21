@@ -1,0 +1,63 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:ParserTests.cpp" caret="1169" fromTop="17" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:UnitTestsHelper.h" caret="159" fromTop="9" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:SuffixTreeBuilderTests.cpp" caret="13195" fromTop="20" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Common.h" caret="0" fromTop="0" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Parser.h" caret="278" fromTop="16" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Worker.cpp" caret="264" fromTop="10" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Linearizator.h" caret="482" fromTop="13" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Vertex.cpp" caret="1196" fromTop="20" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Vertex.h" caret="469" fromTop="21" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:SuffixTree.cpp" caret="1285" fromTop="17" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:SuffixTree.h" caret="306" fromTop="16" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:TList.h" caret="355" fromTop="26" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:SuffixTreeBuilder.h" caret="990" fromTop="22" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Common.cpp" caret="0" fromTop="0" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:AppException.h" caret="70" fromTop="3" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Worker.h" caret="124" fromTop="9" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:PositionInTree.h" caret="570" fromTop="26" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:PositionInTree.cpp" caret="182" fromTop="9" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:StringComparer.h" caret="552" fromTop="20" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:StringComparer.cpp" caret="0" fromTop="0" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:SuffixTreeBuilder.cpp" caret="5520" fromTop="9" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Arch.cpp" caret="31" fromTop="2" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Arch.h" caret="101" fromTop="7" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="5686" fromTop="144" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:main.cpp" caret="290" fromTop="13" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Parser.cpp" caret="744" fromTop="20" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Linearizator.cpp" caret="1424" fromTop="47" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Linearizator.cpp" caret="32" fromTop="2" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Linearizator.cpp" caret="931" fromTop="16" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Linearizator.cpp" caret="2357" fromTop="23" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Linearizator.cpp" caret="219" fromTop="8" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Linearizator.cpp" caret="434" fromTop="14" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Linearizator.cpp" caret="1926" fromTop="4" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Linearizator.h" caret="482" fromTop="13" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="724" fromTop="18" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="1031" fromTop="16" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="1112" fromTop="18" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="1456" fromTop="19" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="1628" fromTop="23" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="1887" fromTop="19" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="2059" fromTop="23" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="2321" fromTop="19" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="2402" fromTop="21" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="2771" fromTop="22" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="2852" fromTop="21" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="3231" fromTop="19" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="3313" fromTop="21" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="3674" fromTop="23" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="3846" fromTop="27" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="4147" fromTop="18" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="4228" fromTop="20" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="4764" fromTop="19" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="4846" fromTop="21" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:LinearizatorTests.cpp" caret="4946" fromTop="11" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:main.cpp" caret="91" fromTop="7" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:main.cpp" caret="4" fromTop="1" />
+    <File id="B820C4C5-B113-4F54-8F57-34745E1B77F5/f:Parser.cpp" caret="744" fromTop="17" />
+  </RecentEdits>
+</RecentFiles>
