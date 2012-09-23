@@ -13,7 +13,7 @@ public:
 	int Linearize(TList<char>* inputString);
 
 private:
-	int FindMinString(SuffixTree* tree, int inputStringLength, TList<char>* inputString);
+	int FindMinString(SuffixTree* tree, int inputStringLength);
 	void AddCopyToEnd(TList<char>* inputString);
 };
 

@@ -148,14 +148,3 @@ TEST(Linearization, CanLinearizeLongString)
 	//Checkresult(expString, linString);
 }
 
-//TEST(Linearization, CanLinearizeLongString2)
-//{
-//	//zsdjkuensk
-//	TList<char>* inputString = UnitTestsHelper::CreateInputString("defhakljahkfgalskufgjasbdjlnbecsvxnrslkdkwasbgjsasvnfasdjnctkkwkkaegrqquibvdnmrcvadefhkljahkgnfasdjnckagruibvdnmcvaslkdkwadgjsavbaslkjfnsadlkfrvhadbvhhnzbcalskufgjasbdjlgncsnzbcbaslkjfnsadlkfvfhadbvxn", 200);
-//	TList<char>* expString = UnitTestsHelper::CreateInputString("adbvhhnzbcalskufgjasbdjlgncsnzbcbaslkjfnsadlkfvfhadbvxndefhakljahkfgalskufgjasbdjlnbecsvxnrslkdkwasbgjsasvnfasdjnctkkwkkaegrqquibvdnmrcvadefhkljahkgnfasdjnckagruibvdnmcvaslkdkwadgjsavbaslkjfnsadlkfrvh", 200);
-//	Linearizator* linearizator = new Linearizator();
-//	TList<char>* linString = linearizator->Linearize(inputString);
-//
-//	//Asserts
-//	Checkresult(expString, linString);
-//}

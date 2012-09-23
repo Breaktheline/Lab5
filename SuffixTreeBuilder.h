@@ -32,6 +32,8 @@ private:
 	};
 
 	void AddFirstElement(PositionInTree* startPosition, Vertex* root);
+	char GetStringElement(int index);
+
 	void FindEndOfSuffix(PositionInTree* startPosition, Vertex* startVertex, int startIndex, int finishIndex);
 	Arch* FindNextArch(Vertex* vertex, int index);
 	bool AreEqualsChars(int firstIndex, int secondIndex);
@@ -46,6 +48,7 @@ private:
 
 	int _lastAddedIndex;
 	TList<char>* _string;
+	int _stringCount;
 };
 
 #endif

@@ -15,11 +15,11 @@ int Linearizator::Linearize(TList<char>* string)
 		return string->GetElement(0) > string->GetElement(1) ? 1 : 0;
 	}
 
-	AddCopyToEnd(string);
+	//AddCopyToEnd(string);
 	SuffixTreeBuilder builder(string);
 	SuffixTree* tree = builder.BuildTree();
 
-	return FindMinString(tree, inputStringLength, string);
+	return FindMinString(tree, inputStringLength);
 }
 
 void Linearizator::AddCopyToEnd(TList<char>* inputString)
@@ -27,10 +27,10 @@ void Linearizator::AddCopyToEnd(TList<char>* inputString)
 	inputString->AddRange(inputString);
 }
 
-int Linearizator::FindMinString(SuffixTree* tree, int inputStringLength, TList<char>* string)
+int Linearizator::FindMinString(SuffixTree* tree, int inputStringLength)
 {
 	int checkedLength = 0;
-	int lastIndex = string->GetCount() - 1;
+	int lastIndex = inputStringLength + inputStringLength;
 
 	Vertex* root = tree->GetRoot();
 	Arch* nextArch = root->FindMinOutcomeArch();

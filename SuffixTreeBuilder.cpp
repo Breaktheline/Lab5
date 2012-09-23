@@ -3,16 +3,17 @@
 SuffixTreeBuilder::SuffixTreeBuilder(TList<char>* string)
 {
 	_string = string;
+	_stringCount = string->GetCount();
 }
 
 SuffixTree* SuffixTreeBuilder::BuildTree()
 {
-	if (_string->GetCount() < 1)
+	if (_stringCount < 1)
 	{
 		return NULL;
 	}
 
-	_string->Add(SuffixTree::LAST_CHARACTER);
+	//_string->Add(SuffixTree::LAST_CHARACTER);
 
 	Vertex* root = new Vertex(NULL);
 	//результат окончани€ продолжени€
@@ -24,44 +25,55 @@ SuffixTree* SuffixTreeBuilder::BuildTree()
 
 	// номер продолжени€ j, с которого начинаетс€ фаза.
 	int startExtension = 1;
-	int stringCount = _string->GetCount();
-	bool IsFirstExtensionOfPhase = true;
-	for(int i = 1; i < stringCount; i++)
+	int stringCount = _stringCount;
+	bool isFirstExtensionOfPhase = true;
+	int startIndex = 1;
+	for(int j = 0; j < 2; j++)
 	{
-		startExtension--;
-		// добавл€ем продолжени€ до конца фазы
-		while(startExtension <= i)
+		if (j == 1)
 		{
-			Vertex* lastNewInnerVertex = IsFirstExtensionOfPhase ? NULL : extensionResult.newInnerVertex;
-			// ≈сли на предыдущем шаге была выделена вершина, то с нее начинать поиск места продолжени€.
-			if(lastNewInnerVertex != NULL)
-			{
-				startPosition.SetPositionToVertex(lastNewInnerVertex);
-			}
-
-			if (IsFirstExtensionOfPhase)
-			{
-				startPosition.SetPosition(&extensionResult.positionInTree);
-			}
-			else
-			{
-				UpdatePlaceToExtend(&startPosition);
-			}
-
-			ExtendFromPosition(&extensionResult, &startPosition, i, startExtension);
-			TryToAddLinkedVertex(lastNewInnerVertex, &extensionResult, root);
-
-			IsFirstExtensionOfPhase = false;
-			startExtension++;
-			// ≈сли применилось третье правило.
-			if (extensionResult.isLastExtension)
-			{
-				break;
-			}
+			_string->Add(SuffixTree::LAST_CHARACTER);
+			startIndex = stringCount;
+			stringCount += stringCount + 1;
 		}
 
-		IsFirstExtensionOfPhase = true;
+		for(int i = startIndex; i < stringCount; i++)
+		{
+			startExtension--;
+			// добавл€ем продолжени€ до конца фазы
+			while(startExtension <= i)
+			{
+				Vertex* lastNewInnerVertex = isFirstExtensionOfPhase ? NULL : extensionResult.newInnerVertex;
+				// ≈сли на предыдущем шаге была выделена вершина, то с нее начинать поиск места продолжени€.
+				if(lastNewInnerVertex != NULL)
+				{
+					startPosition.SetPositionToVertex(lastNewInnerVertex);
+				}
+
+				if (isFirstExtensionOfPhase)
+				{
+					startPosition.SetPosition(&extensionResult.positionInTree);
+				}
+				else
+				{
+					UpdatePlaceToExtend(&startPosition);
+				}
+
+				ExtendFromPosition(&extensionResult, &startPosition, i, startExtension);
+				TryToAddLinkedVertex(lastNewInnerVertex, &extensionResult, root);
+
+				isFirstExtensionOfPhase = false;
+				startExtension++;
+				// ≈сли применилось третье правило.
+				if (extensionResult.isLastExtension)
+				{
+					break;
+				}
+			}
+
+		isFirstExtensionOfPhase = true;
 		_lastAddedIndex = i;
+		}
 	}
 
 	return new SuffixTree(_string, root);
@@ -71,7 +83,7 @@ void SuffixTreeBuilder::AddFirstElement(PositionInTree* startPosition, Vertex* r
 {
 	// ¬ыполн€м 0 фазу: добавл€ем корень и одну листовую дугу.
 	Arch* firstArch = new Arch(0, 0, -1);
-	root->AddOutcomeArch(_string->GetElement(firstArch->startIndex), firstArch);
+	root->AddOutcomeArch(GetStringElement(firstArch->startIndex), firstArch);
 	_lastAddedIndex = 0;
 	startPosition->SetPositionToArch(firstArch, 0);
 }
@@ -149,21 +161,7 @@ void SuffixTreeBuilder::FindEndOfSuffix(PositionInTree* startPosition, Vertex* s
 
 Arch* SuffixTreeBuilder::FindNextArch(Vertex* vertex, int index)
 {
-	//Arch** arches = vertex->GetOutcomeArches();
-	//int archesCount = vertex->GetOutcomeArchesCount();
-	//for (int i = 0; i < archesCount; i++)
-	//{
-	//	Arch* arch = arches[i];
-	//	
-	//	if (AreEqualsChars(index, arch->startIndex))
-	//	{
-	//		return arch;
-	//	}
-	//}
-
-	//return NULL;
-
-	return vertex->FindOutcomeArch(_string->GetElement(index));
+	return vertex->FindOutcomeArch(GetStringElement(index));
 }
 
 // ¬ыполн€ем одно из трех правил продолжени€.
@@ -190,7 +188,7 @@ void SuffixTreeBuilder::ExtendFromVertex(ExtensionResult* extensionResult, Verte
 	if (nextArch == NULL)
 	{
 		Arch* newArch = new Arch(extensionNumber, indexInString, -1);
-		vertex->AddOutcomeArch(_string->GetElement(newArch->startIndex), newArch);
+		vertex->AddOutcomeArch(GetStringElement(newArch->startIndex), newArch);
 		extensionResult->SetExtensionResult(newArch, indexInString, vertex, false);
 	}
 	else
@@ -207,18 +205,18 @@ void SuffixTreeBuilder::ExtendByAddingNewVertex(ExtensionResult* extensionResult
 
 	// ”дал€ем текущую дугу из вершины.
 	Vertex* prevVertex = currentArch->prevVertex;
-	prevVertex->RemoveOutcomeArch(_string->GetElement(currentArch->startIndex), currentArch);
+	prevVertex->RemoveOutcomeArch(GetStringElement(currentArch->startIndex), currentArch);
 	// —оздаем новую дугу, котора€ €вл€етс€ общей.
 	Arch* commonArch = new Arch(-1, currentArch->startIndex, indexInArch);
-	prevVertex->AddOutcomeArch(_string->GetElement(commonArch->startIndex), commonArch);
+	prevVertex->AddOutcomeArch(GetStringElement(commonArch->startIndex), commonArch);
 	// »змен€ем начало текущей дуги.
 	currentArch->startIndex = indexInArch + 1;
 	// —оздаем новую дугу, котора€ €вл€етс€ ответвлением.
 	Arch* newArch = new Arch(extensionNumber, indexInString, -1);
 	// —оздаем новую вершину.
 	Vertex* newVertex = new Vertex(commonArch);
-	newVertex->AddOutcomeArch(_string->GetElement(currentArch->startIndex), currentArch);
-	newVertex->AddOutcomeArch(_string->GetElement(newArch->startIndex), newArch);
+	newVertex->AddOutcomeArch(GetStringElement(currentArch->startIndex), currentArch);
+	newVertex->AddOutcomeArch(GetStringElement(newArch->startIndex), newArch);
 
 	extensionResult->SetExtensionResult(newArch, newArch->startIndex, newVertex, false);
 }
@@ -277,5 +275,15 @@ void SuffixTreeBuilder::TryToAddLinkedVertex(Vertex* lastNewInnerVertex, Extensi
 
 bool SuffixTreeBuilder::AreEqualsChars(int firstIndex, int secondIndex)
 {
-	return _string->GetElement(firstIndex) == _string->GetElement(secondIndex);
+	return GetStringElement(firstIndex) == GetStringElement(secondIndex);
+}
+
+char SuffixTreeBuilder::GetStringElement(int index)
+{
+	if (index >= _stringCount)
+	{
+		index -= _stringCount;
+	}
+
+	return _string->GetElement(index);
 }
