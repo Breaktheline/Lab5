@@ -20,9 +20,7 @@ TList<char>* Parser::ReadString(FILE* inputFile)
 		return NULL;
 	}
 
-	//string->TrimExcess();
 	fclose(inputFile);
-	printf("%d\n", string->GetCount());
 	return string;
 }
 
